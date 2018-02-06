@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+    <div class="background">
+<!--START MENU -->
+        <div id="menuPage" class="container">
+            <div class="row justify-content-sm-center">
+                <div class="col col-2">
+                </div>
+                <div id="startMenu" class="col-lg-auto">
+                    <img src="images/dbz-StartMenu.jpg" alt="#" id="background">
+                    <div id="start">START GAME</div>
+
+                </div>
+                <div class="col col-2">
+                </div>
+            </div>
+        </div>
+<!--FIGHT AREA -->
+        <section id="fightAreaPage">
+    <!--Fight End Menu -->
+            <section id="endMenu">
+                <div id="win" class="container">
+                    <div id="player1Win" id="fightMenu">
+                        <h1>YOU WIN</h1>
+                        <form action="">
+                            <button id="playAgainBtn">Play Again</button>
+                        </form>
+                        <form action="">
+                            <button type="submit" id="backMenuBtn">Start Menu</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="lost" class="container">
+                        <div id="iaWin" >
+                            <h1>YOU LOST</h1>
+                            <form action="">
+                                <button id="playAgainBtn">Play Again</button>
+                            </form>
+                            <form action="">
+                                <button type="submit" id="backMenuBtn">Start Menu</button>
+                            </form>
+                        </div>
+                    </div>
+                
+               <!-- <div id="iaWin" class="container" id="fightMenu">
+
+                    <h1>You Lost</h1>
+                    <form action="">
+                        <button id="playAgainBtn">Play Again</button>
+                    </form>
+                    <form action="">
+                        <button type="submit" id="backMenuBtn">Start Menu</button>
+                    </form>
+                </div> -->
+            </section>
+            <div class="container" id="fightArea">
+                <div class="row justify-content-sm-center">
+                    <div class="col col-2">
+                         <!-- Player Buttons-->
+                         <div id="player1Buttons">
+                                <button type="button" id="smallAttackButton" class="btnSmAtt">Petite Attaque</button>
+                                <button type="button" id="bigAttackButton" class="btnBigAtt">Kamehameha</button>
+                                <button type="button" id="defenseButton" class="btnDef">Defense</button>
+                            </div>
+                    </div>
+                    <div id="fightAreaStyle" class="col-lg-auto">
+    <!--Players Hp & Ki bar -->
+                        <div id="playersData">
+                            <div id="leftBar">
+                                <div id="hpLeftBack">
+                                    <input id="hpPlayer1" type="texte" value="">
+                                </div>
+                                <div id="kiLeftBack">
+                                    <input id="kiPlayer1" type="texte" value="">
+                                </div>
+                            </div>
+                            <div id="infinite">
+                                <img id="infinitePic" src="/images/infinite.png" alt="">
+                            </div>
+                            <div id="rightBar">
+                                <div id="hpRightBack">
+                                    <input id="hpIa" type="texte" value="">
+                                </div>
+                                <div id="kiRightBack">
+                                    <input id="kiIa" type="texte" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fighterArea">
+                            <img id="sangoku" src="images/sangoku-fly.png" alt="">
+                            <div class="gokuSmallAtt">
+                                <img class="gokuSmAttPic" src="images/goku_smallAtt1.png" alt="">
+                            </div>
+                            <div id="gokuBigAttBlock">
+                                <img class="gokuBigAttPic" src="images/goku_bigAtt1.png" alt="">
+                                <div class="gokuBigAtt"></div>
+                            </div>
+                            <div id="gokuDefense">
+                                <img class="gokuDefPic" src="images/defense.png" alt="">
+                            </div>
+                            <img id="vegeta" src="images/Vegeta_fly.png" alt="">
+                        </div>
+                        <img src="images/fight-area-statdium1.jpg" alt="#">
+
+                    </div>
+                    <div class="col col-2">
+           
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+    </div>
+
+    <script type="text/javascript" src="scripts/menu.js"></script>
+    <script type="text/javascript" src="scripts/Perso.js"></script>
+    <script type="text/javascript" src="scripts/player1.js"></script>
+    <script type="text/javascript" src="scripts/ia.js"></script>
+    <script type="text/javascript" src="scripts/jeu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+<!--
+<div id="lesbarresG" >
+        <div class="niv_arriere">
+        <input  id="niveauG1" type="texte" value="">
+        </div>
+        <div class="niv_arriere">
+        <input id="niveauG2" type="texte"  value="">
+        </div>
+
+    -->
